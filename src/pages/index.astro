@@ -1,16 +1,82 @@
----
-
----
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>devcrafter.pro</title>
-	</head>
-	<body>
-		<h1>devcrafter.pro</h1>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devcrafter Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Hero Section -->
+    <header class="bg-gray-800 py-12">
+        <div class="container mx-auto text-center">
+            <img src="logo.png" alt="Devcrafter Pro Logo" class="mx-auto w-32 h-32">
+            <h1 class="text-4xl font-bold mt-4">Welcome to Devcrafter Pro</h1>
+            <p class="text-gray-400 mt-2">Crafting Innovative Software Solutions for Your Business</p>
+            <a href="#contact" class="mt-6 inline-block bg-indigo-600 hover:bg-indigo-500 text-white py-3 px-6 rounded-lg">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-12 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">About Us</h2>
+            <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                At Devcrafter Pro, we specialize in creating cutting-edge web and mobile applications tailored to your business needs. Our team of experienced developers and designers is committed to delivering exceptional results.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-12 bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                    <p class="text-gray-400">Responsive and high-performance websites to elevate your online presence.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Mobile Apps</h3>
+                    <p class="text-gray-400">Cross-platform mobile applications to engage your customers on the go.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-4">Custom Solutions</h3>
+                    <p class="text-gray-400">Tailored software solutions to meet your unique business requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center">Contact Us</h2>
+            <form action="#" method="POST" class="mt-8 max-w-xl mx-auto bg-gray-800 p-6 rounded-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-400">Your Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-400">Your Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-400">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-500 py-3 px-6 rounded-lg text-white font-medium">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">&copy; 2024 Devcrafter Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
